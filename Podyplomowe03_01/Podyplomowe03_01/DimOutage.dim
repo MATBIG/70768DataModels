@@ -1,0 +1,236 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="34339531-19ce-4f3d-bb55-4b312f6241ac" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimOutage</ID>
+  <Name>DimOutage</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3645" scrolltop="-8639" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="16457" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vDimOutage" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4683" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00004b12000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_vDimOutage" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3645</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8639</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3e42daf8-0052-48d9-80aa-2780cdb4562e">
+    <DataSourceViewID>Contoso Retail DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="be6ab07b-a795-4aaf-ab69-e6dee6eda2f7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="236d06c3-4be2-485e-a966-1733a4b69792">
+      <ID>Outage Key</ID>
+      <Name>Outage Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da68f0c6-80f4-4352-b005-8f57e579507b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa8756ac-6a8c-47b3-a43b-43dc33b4900d">
+            <TableID>olap_vDimOutage</TableID>
+            <ColumnID>OutageKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="eb88d1e6-2800-4aa3-a0cc-688eddd80694">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b8a9e20a-9674-42a7-8450-4e6d4778dd03">
+          <TableID>olap_vDimOutage</TableID>
+          <ColumnID>OutageLabel</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="47a00de7-74e9-41ab-868b-f677611e022d">
+          <AttributeID>Outage Name</AttributeID>
+          <Name>Outage Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e86e2775-779d-4d3b-9a6a-51ce460a2b35">
+          <AttributeID>Outage Description</AttributeID>
+          <Name>Outage Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f47606ce-5395-41f4-87d9-71e58507d81c">
+          <AttributeID>Outage Type</AttributeID>
+          <Name>Outage Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="40eaf663-d8c6-4e42-a640-f830b0fb50cb">
+          <AttributeID>Outage Type Description</AttributeID>
+          <Name>Outage Type Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3fffbf41-5fab-453d-af62-61b7031d6a3f">
+          <AttributeID>Outage Sub Type</AttributeID>
+          <Name>Outage Sub Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="902ab579-d508-41f9-83e6-e9e8f1df9dd7">
+          <AttributeID>Outage Sub Type Description</AttributeID>
+          <Name>Outage Sub Type Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="addd831e-207a-4f22-b56e-35e45fb42990">
+      <ID>Outage Name</ID>
+      <Name>Outage Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0ef3abb-1048-4659-add9-8d47ed1cb464">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e5467b0-3803-48eb-a738-692e914b94f9">
+            <TableID>olap_vDimOutage</TableID>
+            <ColumnID>OutageName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33e3b494-665b-4986-8efd-155bd5318aa6">
+      <ID>Outage Description</ID>
+      <Name>Outage Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c4aae3d7-9d2b-4e78-91a8-00936d72495c">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd2bb5a1-5b91-47b9-90a8-d49aa5cd0af5">
+            <TableID>olap_vDimOutage</TableID>
+            <ColumnID>OutageDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dbfc4919-e99d-4f93-a42a-c5e63e397ac9">
+      <ID>Outage Type</ID>
+      <Name>Outage Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="26af1741-f6d0-415e-a25f-6df65b49654e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24040765-0d83-41d6-9dc7-d13270116dab">
+            <TableID>olap_vDimOutage</TableID>
+            <ColumnID>OutageType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dbbbad4f-fb5e-4a2d-a550-e80ec1c56af1">
+      <ID>Outage Type Description</ID>
+      <Name>Outage Type Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bd1e2691-1ff6-4636-822d-6ed57b821080">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5eef5b97-7749-443b-94a8-9f8b72f3a456">
+            <TableID>olap_vDimOutage</TableID>
+            <ColumnID>OutageTypeDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="64d1dfa2-c87c-4e68-b9be-219a489a6b25">
+      <ID>Outage Sub Type</ID>
+      <Name>Outage Sub Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78254d3b-7e34-4550-ac5c-09b3d0d736b2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c742e30c-01ac-4f17-b96c-2d4cecb52d18">
+            <TableID>olap_vDimOutage</TableID>
+            <ColumnID>OutageSubType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34a9712d-3f45-489c-b5b9-638ec72c0f06">
+      <ID>Outage Sub Type Description</ID>
+      <Name>Outage Sub Type Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="569557ab-58f6-4d65-8b90-7d507ecb831a">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="703c03f2-ce7e-409f-8dc4-dabf45067a5b">
+            <TableID>olap_vDimOutage</TableID>
+            <ColumnID>OutageSubTypeDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

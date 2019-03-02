@@ -1,0 +1,190 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2fc13f40-ae7a-41ea-a494-45e90285b659" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimGeography</ID>
+  <Name>DimGeography</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="203b5689-ab56-490f-8ba8-a3e234090821">
+    <DataSourceViewID>Contoso Retail DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="e0341aa9-810c-4043-b3e2-25adc0ee6bb4">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="2985aef1-f661-4a70-a20e-03a27894fe40">
+      <ID>Geography Key</ID>
+      <Name>Geography Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc8cd591-95bd-4d47-bd8d-c13975f3f3cd">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07055e03-a421-4065-9877-d48c76a87de8">
+            <TableID>olap_vDimGeography</TableID>
+            <ColumnID>GeographyKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d02c2e38-624e-4666-8bee-6d1762819173">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5d0c9086-eb83-480e-aef9-e1e6cf1739e1">
+          <TableID>olap_vDimGeography</TableID>
+          <ColumnID>GeographyName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="75ac2902-6160-40f7-af30-3568e30d6710">
+          <AttributeID>Geography Type</AttributeID>
+          <Name>Geography Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f86ca18e-37ac-48eb-ad1e-f47c865ffb9c">
+          <AttributeID>Continent Name</AttributeID>
+          <Name>Continent Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8741f676-d62f-4d17-947e-7deaa0c0e876">
+          <AttributeID>City Name</AttributeID>
+          <Name>City Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4a449c08-8b4e-4b90-82f9-c615a09dd654">
+          <AttributeID>State Province Name</AttributeID>
+          <Name>State Province Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="336f5c81-5371-48f5-b4cb-d95d77e226b1">
+          <AttributeID>Region Country Name</AttributeID>
+          <Name>Region Country Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="23854d8f-0e2c-4dfb-a44d-9b507ab0083e">
+      <ID>Geography Type</ID>
+      <Name>Geography Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43f3e298-1aa0-4662-b9e4-82f665411901">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31bba80a-7cdd-4b2a-8dc0-a94e38275bbb">
+            <TableID>olap_vDimGeography</TableID>
+            <ColumnID>GeographyType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8e55ad2-bee2-4c6f-b928-365cdb5fd4fb">
+      <ID>Continent Name</ID>
+      <Name>Continent Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c2ab694a-ef6a-4363-9f98-25c69c50dc6b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="47677a04-c6d7-4a84-90a9-04e4a2d1dcee">
+            <TableID>olap_vDimGeography</TableID>
+            <ColumnID>ContinentName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6125a061-338a-4e72-bad3-56b71bf8a2aa">
+      <ID>City Name</ID>
+      <Name>City Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c426e30-0ecc-4f6e-827c-5229a1f3ec84">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3f3eacd-5633-4f9a-a17e-0df0f1b0ac57">
+            <TableID>olap_vDimGeography</TableID>
+            <ColumnID>CityName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a05c2209-ba3d-484c-b3b4-43efa358ced8">
+      <ID>State Province Name</ID>
+      <Name>State Province Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6fde7cd6-cce4-42e0-be80-ace6069ea60a">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0999422-10df-418f-9446-7b74fe53b104">
+            <TableID>olap_vDimGeography</TableID>
+            <ColumnID>StateProvinceName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eb47a2ab-fa08-4c5d-9f41-f91169b327b5">
+      <ID>Region Country Name</ID>
+      <Name>Region Country Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd60fb76-315a-4550-918f-de395d9899fe">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef8e6c4e-da97-46d9-80a0-94776330290e">
+            <TableID>olap_vDimGeography</TableID>
+            <ColumnID>RegionCountryName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
