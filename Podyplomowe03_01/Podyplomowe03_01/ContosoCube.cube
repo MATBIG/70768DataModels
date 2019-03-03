@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-18502" scrolltop="14644" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="80" x="34925" y="16457" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="42" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-31430" scrolltop="8112" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="50" x="34925" y="16457" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
@@ -296,6 +296,24 @@
               <ddsxmlobjectstreaminitwrapper binary="000c0000a90c0000a90c0000" />
             </control>
             <layoutobject>
+              <ddsxmlobj />
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vFactITMachine" left="0" top="0" logicalid="40" controlid="21" masterid="0" hint1="0" hint2="0" width="3241" height="3241" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000a90c0000a90c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj />
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vFactITMachine" left="0" top="0" logicalid="41" controlid="22" masterid="0" hint1="0" hint2="0" width="3241" height="3241" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000a90c0000a90c0000" />
+            </control>
+            <layoutobject>
               <ddsxmlobj>
                 <property name="LogicalObject" value="olap_vFactITMachine" vartype="8" />
               </ddsxmlobj>
@@ -319,11 +337,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-18502</Value>
+      <Value>-31430</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>14644</Value>
+      <Value>8112</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -335,7 +353,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-      <Value>80</Value>
+      <Value>50</Value>
     </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
@@ -561,6 +579,313 @@
       </Attributes>
     </Dimension>
   </Dimensions>
+  <Perspectives>
+    <Perspective dwd:design-time-name="4027664d-968c-41c0-aea6-e28d228cc257">
+      <ID>Perspective</ID>
+      <Name>PersITSLA</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="c2d55218-e3c4-4778-91b5-bd7f54686efc">
+          <CubeDimensionID>DimStore</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="84a47de0-63a8-442b-a8e4-970ce7942804">
+              <AttributeID>Store Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b597c7e8-125f-4496-b792-914870d0fc2b">
+              <AttributeID>Store Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="850b8c9d-d65c-4ba3-9f25-20bee8908d73">
+              <AttributeID>Store Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="975845a6-c6f6-482d-875a-37a01ccbcf9d">
+              <AttributeID>Status</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="97fc6a74-234e-4cc1-83a4-5214281ddbff">
+              <AttributeID>Entity Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1df73d32-6415-41b6-8c09-25d2d5481ad4">
+              <AttributeID>Geography Key</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="eb828485-75aa-4d92-983e-57ea7904bd47">
+          <CubeDimensionID>DimMachine</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="faed3a87-10a0-4680-a163-9fa59e0a9828">
+              <AttributeID>Machine Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3e273e27-3f13-4cf6-a2d8-b8199ce6fc03">
+              <AttributeID>Machine Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0174cbc0-cef7-424f-90ea-cf5846f126b6">
+              <AttributeID>Machine Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="33077558-12e1-4561-80cb-4ba73b395a0b">
+              <AttributeID>Machine Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4470b49f-ffda-4717-a6ca-eb5251ee8b47">
+              <AttributeID>Vendor Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ce69c00b-ad65-4afc-89ca-d527bdea29ae">
+              <AttributeID>Machine OS</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7dfcc752-0e0a-48e3-87fc-8036786306f6">
+              <AttributeID>Machine Source</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="bd83418c-28ff-4d28-b821-3d929b06848c">
+              <AttributeID>Machine Hardware</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="23b70526-8586-42f4-89e1-cbcf13d3041b">
+              <AttributeID>Machine Software</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b01b75bb-302f-4328-9d83-9b94dc94bb86">
+              <AttributeID>Status</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="d20e83b0-39b8-4066-a4d4-2168ef7ae972">
+          <CubeDimensionID>DimOutage</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c4683533-3a70-4cd3-a6bd-3e2644e111c8">
+              <AttributeID>Outage Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4776acc7-405e-4c2f-b8fa-158a50c46340">
+              <AttributeID>Outage Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7120247e-1c12-41dc-a9ad-b04161b84c83">
+              <AttributeID>Outage Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d70f9a4a-ac4b-425b-b638-8e96aa7ec956">
+              <AttributeID>Outage Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="296078ff-f267-4ced-af1c-bc1c4a3e4c19">
+              <AttributeID>Outage Type Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="adcf23d9-1ae5-4127-b441-bf27094e50cd">
+              <AttributeID>Outage Sub Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="882336c2-090e-4b52-a205-ac2b3b54daa8">
+              <AttributeID>Outage Sub Type Description</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="500e7d20-c55e-4f75-a0c2-7087bfa99e6f">
+          <CubeDimensionID>DimDate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0ec4bc30-0f01-472f-ae23-ae5bef1b38b9">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="773bd935-3cc7-4b6f-b89b-89929dac903d">
+              <AttributeID>Full Date Label</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c7e39710-bbbd-4c48-b3e9-b0ba063e9c95">
+              <AttributeID>Date Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a7da8010-7d86-44a3-9d20-2b262d1e0916">
+              <AttributeID>Is Work Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b1af1ce8-c1b3-47ab-af1a-02fb7c3fb4f8">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a4524faa-36ca-49e2-8149-3308d1f071c2">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="99198401-edac-4f9f-b3e9-d102c645ac20">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1845e941-bf99-4688-a4c2-af50fa643898">
+              <AttributeID>Calendar Half Year</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="faf1e430-58cd-41e4-8aab-635483f54dc0">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="de7debb7-ff47-4aa3-af7d-3f1e3da06e49">
+          <CubeDimensionID>DimEntity</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2ce28f5e-9a3b-4422-82c5-f76c4845dad2">
+              <AttributeID>Entity Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="412705de-a80e-4ac5-81e1-1db5ba85f07e">
+              <AttributeID>Parent Entity Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="87c25338-c2b9-4d76-995e-4f938902eccd">
+              <AttributeID>Entity Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="99351f3e-5b86-4969-a5ec-79e21162419c">
+              <AttributeID>Entity Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4b3832fe-d75e-4324-8981-6f613edd1b5e">
+              <AttributeID>Entity Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="27bac22b-3ed6-4629-86c7-05327b3bf47c">
+              <AttributeID>Status</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="ab7b8c31-6776-4de6-a332-7745b6e675cc">
+          <CubeDimensionID>DimGeography</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="03da5142-d32d-4d04-bb8b-d8aa5d9a7204">
+              <AttributeID>Geography Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f32e67d8-8e6c-48bb-8daf-01e555ae90f1">
+              <AttributeID>Geography Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d920e958-7905-49f4-9a03-4c5cf9d42b1a">
+              <AttributeID>Continent Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dbc1f69b-bfd5-4f8c-ab04-3110bc792432">
+              <AttributeID>City Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="82888b92-fe79-4d32-b4c0-99d09bceea16">
+              <AttributeID>State Province Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="16278f43-262b-46cb-8af9-cf8f8d8dcdc7">
+              <AttributeID>Region Country Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="77c18dcd-8b90-4565-b21e-6d3ed423340d">
+          <MeasureGroupID>v Fact ITSLA</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="accbe995-0841-42b9-8bca-66a38b97684b">
+              <MeasureID>Down Time</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="63cd6292-d5d3-46c6-a9d4-80308f2e3173">
+              <MeasureID>v Fact ITSLA Count</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="b9ca7d21-3531-42b0-879b-445550448be7">
+              <MeasureID>Down Time Hrs</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="1f738e6e-f1b8-4a48-acbf-955bf84a30f6">
+      <ID>Perspective 1</ID>
+      <Name>Perspective</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="493b7167-7486-4298-bb27-fed3bce8eb19">
+          <CubeDimensionID>DimDate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d348caec-dc35-4b42-95f6-eb5941617d2f">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="03a579b9-4f9e-4622-bc7a-d05a643c18c3">
+              <AttributeID>Full Date Label</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3b59595d-e10d-494f-a825-73dcf6201dac">
+              <AttributeID>Date Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="18fb014c-624f-4e48-a1e0-fcaa0a74b148">
+              <AttributeID>Is Work Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1a364737-7fd0-47ad-a990-41c50f66e64c">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="19e48a70-e5b5-4f5d-bb51-99c90b199e11">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5d5eae3f-987d-4690-a229-fbc7fa8020b5">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="784fb8db-2c25-4678-8ff9-2c50d16f7080">
+              <AttributeID>Calendar Half Year</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="35836ad9-46d7-4b60-b9f2-4bb1a196a67a">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="82151a21-d0ec-4d08-ba0d-676c63f890ec">
+          <CubeDimensionID>dDimITMachine</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="11a43308-4219-4e24-b3c1-65730184172e">
+              <AttributeID>IT Machinekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="332011fe-defe-4b71-84c2-98333eea32a0">
+              <AttributeID>Cost Type</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="11d7cfa9-6769-42dc-a33f-e9138ea50669">
+          <CubeDimensionID>DimMachine</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a4f8a33a-25f1-42d5-8f1b-738469eab771">
+              <AttributeID>Machine Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="675f697b-2037-45ee-b1f5-3748407cdbbb">
+              <AttributeID>Machine Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="24817f2d-6157-421c-ae17-6eb427b7a8fb">
+              <AttributeID>Machine Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dd540608-543e-4e61-ac17-62776be5baaf">
+              <AttributeID>Machine Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="52290f42-7aec-4b95-bf3e-ae77776d1b75">
+              <AttributeID>Vendor Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1d8727e4-2e61-4cf6-899e-68df64632c63">
+              <AttributeID>Machine OS</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="34819f07-5e0b-4583-9014-018e12d88ab8">
+              <AttributeID>Machine Source</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a6ae89bc-5d42-4f71-aad0-f4265902e216">
+              <AttributeID>Machine Hardware</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a7c817f5-10a0-40b8-b8c2-01e0a298cf24">
+              <AttributeID>Machine Software</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a5929282-e680-4335-aea8-ad7c1e3cfa8a">
+              <AttributeID>Status</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="c272eec3-3658-4725-b348-060a06694dbd">
+          <MeasureGroupID>v Fact IT Machine</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="5aabb55e-b631-4c3c-8512-3da15cdd415e">
+              <MeasureID>Cost Amount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="00ca0aa4-309d-4ad4-9d6e-e27aa2b5c2e1">
+              <MeasureID>v Fact IT Machine Count</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="bbd748fd-8935-44d6-a299-6f97a9ee8dad">
+              <MeasureID>Maximum Cost Amount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="b514cb0b-0583-4332-bc28-bec4fe4c54bb">
+              <MeasureID>Minimum Cost Amount</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Calculations>
+        <Calculation dwd:design-time-name="188ac1fe-c57f-4bef-8efd-44731f37af1f">
+          <Name>[Measures].[AvgCostAmount]</Name>
+          <Type>Member</Type>
+        </Calculation>
+        <Calculation dwd:design-time-name="2f0dbb65-0e0a-4d24-9f71-5c8e2f2a706c">
+          <Name>[Measures].[max-min]</Name>
+          <Type>Member</Type>
+        </Calculation>
+      </Calculations>
+    </Perspective>
+  </Perspectives>
   <MeasureGroups>
     <MeasureGroup dwd:design-time-name="ab93924d-16d9-4338-b8c0-29f6b6261ad8">
       <ID>v Fact ITSLA</ID>
@@ -767,6 +1092,32 @@
             </Source>
           </Source>
         </Measure>
+        <Measure dwd:design-time-name="f152534f-b0de-4c74-bf08-fa1bfcfdb4ac">
+          <ID>Maximum Cost Amount</ID>
+          <Name>MaximumCostAmount</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="2ff1e4c6-07ff-445a-8718-bc8e8228e095">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6f48ee8b-4244-49c9-89ce-32066b0be266">
+              <TableID>olap_vFactITMachine</TableID>
+              <ColumnID>CostAmount</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="1a66a989-221e-4d86-acb6-c599aceb6c28">
+          <ID>Minimum Cost Amount</ID>
+          <Name>MinimumCostAmount</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="0dcb8265-37c2-4043-a942-a40f0dcb7683">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="33d71dca-6bde-4d33-9e8e-e586b8dc8d1a">
+              <TableID>olap_vFactITMachine</TableID>
+              <ColumnID>CostAmount</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+        </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
@@ -832,4 +1183,28 @@
   <Source dwd:design-time-name="52633a83-1680-42e1-a777-2148e0557119">
     <DataSourceViewID>Contoso Retail DW</DataSourceViewID>
   </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="b52b332e-31f3-477c-90dc-362f927fa92c">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;   
+CREATE MEMBER CURRENTCUBE.[Measures].[AvgCostAmount]
+ AS [Measures].[CostAmount]/[Measures].[ITMRowCount], 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'v FactITMachine';   
+CREATE MEMBER CURRENTCUBE.[Measures].[max-min]
+ AS [Measures].[MaximumCostAmount]-[Measures].[MinimumCostAmount], 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'v FactITMachine'  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
 </Cube>

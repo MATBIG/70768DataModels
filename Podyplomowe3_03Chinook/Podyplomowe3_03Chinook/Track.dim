@@ -1,0 +1,241 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4cf438ba-bb4b-44bf-90dd-c3f9f7401e75" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Track</ID>
+  <Name>Track</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ae39b1b6-d324-4147-ab2a-a904b0a11889">
+    <DataSourceViewID>ChinookDSV</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="50d9436a-15f7-42ba-9b2c-4d0d487dc7be">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="d67319b6-e723-499b-8e39-a22a6e543f50">
+      <ID>Track Id</ID>
+      <Name>Track Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0300f04a-3e64-42a3-bbce-84542b9b1eb9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d0d7131-24d3-437d-b4e9-dce839cff8eb">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>TrackId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e3029f86-8666-4054-b224-77b459fd9e21">
+          <AttributeID>Track Name</AttributeID>
+          <Name>Track Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="188dfa53-8659-4e13-8944-fa02b2a70f65">
+          <AttributeID>Composer</AttributeID>
+          <Name>Composer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="49bd57a6-d3a3-4856-8785-d7be72f4dbe4">
+          <AttributeID>Milliseconds</AttributeID>
+          <Name>Milliseconds</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3f8dd711-d2c0-4b00-8f5f-f6a5d7cf2053">
+          <AttributeID>Bytes</AttributeID>
+          <Name>Bytes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0f204dba-355d-409d-8404-9378176ff65b">
+          <AttributeID>Unit Price</AttributeID>
+          <Name>Unit Price</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e411fcd7-b833-42b8-be1f-f389ad9bc4f6">
+          <AttributeID>Genre Name</AttributeID>
+          <Name>Genre Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eba01d92-75ca-4747-9f45-c820ad9736b5">
+          <AttributeID>Media Type Name</AttributeID>
+          <Name>Media Type Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1e48c779-3742-4dfe-ad2b-3016edb33d7c">
+          <AttributeID>Album Id</AttributeID>
+          <Name>Album Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="87285e21-9990-44c5-b44a-3bb35a0761da">
+      <ID>Track Name</ID>
+      <Name>Track Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d8808f8-dae6-4873-9b8c-a8c8f8cb87ee">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9e6c3d5-ad84-45cd-90d1-5b2f7311b905">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>TrackName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f80deaa-a812-4d80-b14f-dfedf6979f6b">
+      <ID>Composer</ID>
+      <Name>Composer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2b008d16-b083-4892-baca-b43ae06ce047">
+          <DataType>WChar</DataType>
+          <DataSize>220</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="387f1bf6-bb83-4ed3-b74b-3137002d2d3d">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>Composer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5cc519a8-351e-4cb7-90b7-140f283db9b7">
+      <ID>Milliseconds</ID>
+      <Name>Milliseconds</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e45d9e7b-3060-4ee5-89d7-b1bcfe35c044">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46a620ad-42b2-42b4-8347-545e2d7012d8">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>Milliseconds</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dcc4e3ab-a7f3-477c-a519-bddddd484252">
+      <ID>Bytes</ID>
+      <Name>Bytes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb94f345-fb4f-4600-85ef-26766381ae3c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="36d7a2bd-31ed-45e9-8dc2-59e2e4c00857">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>Bytes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0145d9f6-6ab0-48bd-b526-19e28f47d7b3">
+      <ID>Unit Price</ID>
+      <Name>Unit Price</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6a4c471-e38e-44e3-98d1-41a5f0a2a3d5">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5176c53-bff3-4c24-82a2-466731a7f478">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>UnitPrice</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="26acb05e-661b-4dfe-9650-999fcbb3c1f0">
+      <ID>Genre Name</ID>
+      <Name>Genre Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75440dc7-26f2-485c-bc2a-43d83158e263">
+          <DataType>WChar</DataType>
+          <DataSize>120</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd8397e9-4d6d-4fd7-8a73-76508e155411">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>GenreName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9c382b5d-bc7c-4a7b-b000-3348a4b2e5d7">
+      <ID>Media Type Name</ID>
+      <Name>Media Type Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0874d3ed-2f6a-4312-a830-8db189348909">
+          <DataType>WChar</DataType>
+          <DataSize>120</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76323ab2-7e58-419f-a109-83dfd7c79ff8">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>MediaTypeName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1085e383-98e3-42f2-bf27-d8b0f5598cb6">
+      <ID>Album Id</ID>
+      <Name>Album Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="90cdb805-e930-4ee7-b2e9-34f5607a3681">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e7892fe-f446-42a4-b061-483a3159fc36">
+            <TableID>dbo_vw_Track</TableID>
+            <ColumnID>AlbumId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
